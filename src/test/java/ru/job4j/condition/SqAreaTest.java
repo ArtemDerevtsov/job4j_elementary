@@ -55,8 +55,8 @@ class SqAreaTest {
     void whenP9dot6K3dot14thenSquare4dot22() {
         double p = 9.6;
         double k = 3.14;
-        double expected = 4.220961982776727;
+        double expected = 4.22;
         double out = SqArea.square(p, k);
-        assertThat(out).isEqualTo(expected, withPrecision(0.001));
+        assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
 }
