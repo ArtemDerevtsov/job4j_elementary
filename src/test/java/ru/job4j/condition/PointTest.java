@@ -18,12 +18,12 @@ class PointTest {
     }
 
     @Test
-    void when04to98then9dot848() {
+    void when04to98then9dot84() {
         int x1 = 0;
         int y1 = 4;
         int x2 = 9;
         int y2 = 8;
-        double expected = 9.848857801796104;
+        double expected = 9.84;
         double eps = 0.01;
         double out = Point.distance(x1, y1, x2, y2);
         assertThat(out).isEqualTo(expected, withPrecision(eps));
@@ -42,12 +42,12 @@ class PointTest {
     }
 
     @Test
-    void when1Minus2to0Minus1then1dot414() {
+    void when1Minus2to0Minus1then1dot41() {
         int x1 = 1;
         int y1 = -2;
         int x2 = 0;
         int y2 = -1;
-        double expected = 1.4142135623730951;
+        double expected = 1.41;
         double eps = 0.01;
         double out = Point.distance(x1, y1, x2, y2);
         assertThat(out).isEqualTo(expected, withPrecision(eps));
