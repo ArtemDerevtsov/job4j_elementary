@@ -6,12 +6,9 @@ public class Exe1 {
         int rsul = pay - (int) res;
         if (res > pay) {
             return rsul;
-        }
-        else if (res <= 0) {
+        } else if (res <= 0) {
             return 0;
-        }
-
-        else {
+        } else {
             return 0;
         }
 
