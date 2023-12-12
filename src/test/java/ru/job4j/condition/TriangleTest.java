@@ -1,0 +1,26 @@
+package ru.job4j.condition;
+
+import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.*;
+
+class TriangleTest {
+
+    @Test
+    void whenExist() {
+        double ab = 3.0;
+        double ac = 3.0;
+        double bc = 3.0;
+        boolean result = Triangle.exist(ab, ac, bc);
+        assertThat(result).isTrue();
+    }
+
+    @Test
+    void whenNoExist() {
+        double ab = 3.0;
+        double ac = 1.0;
+        double bc = 5.0;
+        boolean result = Triangle.exist(ab, ac, bc);
+        assertThat(result).isFalse();
+    }
+}
