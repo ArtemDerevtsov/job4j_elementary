@@ -1,6 +1,7 @@
 package ru.job4j.array;
 
 import org.junit.jupiter.api.Test;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 class SwitchArrayTest {
@@ -35,4 +36,35 @@ class SwitchArrayTest {
         int[] expected = {1};
         assertThat(result).containsExactly(expected);
     }
+
+    @Test
+    void whenSwap0to3() {
+        int[] input = {1, 2, 3, 4};
+        int source = 0;
+        int destination = input.length - 1;
+        int[] result = SwitchArray.swap(input, source, destination);
+        int[] expected = {4, 2, 3, 1};
+        assertThat(result).containsExactly(expected);
+    }
+
+    @Test
+    void whenSwap4to8() {
+        int[] input = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        int source = 4;
+        int destination = 8;
+        int[] result = SwitchArray.swap(input, source, destination);
+        int[] expected = {1, 2, 3, 4, 9, 6, 7, 8, 5};
+        assertThat(result).containsExactly(expected);
+    }
+
+    @Test
+    void whenSwap3to4() {
+        int[] input = {1, 2, 3, 4, 5, 6, 7};
+        int source = 3;
+        int destination = 4;
+        int[] result = SwitchArray.swap(input, source, destination);
+        int[] expected = {1, 2, 3, 5, 4, 6, 7};
+        assertThat(result).containsExactly(expected);
+    }
+
 }
