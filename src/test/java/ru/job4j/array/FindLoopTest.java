@@ -90,7 +90,7 @@ class FindLoopTest {
 
     @Test
     public void whenDiapasonHas7ThenResultEqualStart() {
-        int[] data = new int[] {4, 6, 7, 8, 9};
+        int[] data = new int[] {8, 6, 7, 8, 9};
         int element = 7;
         int start = 2;
         int finish = 2;
