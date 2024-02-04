@@ -23,5 +23,4 @@ public class MathCalculator {
         System.out.println("Результат расчета 2 равен: " + diffAndDiv(40, 8));
         System.out.println("Результат расчета 3 равен: " + allCalc(20, 25));
     }
-
 }
