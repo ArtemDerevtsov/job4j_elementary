@@ -5,8 +5,16 @@ public class Max {
         return left > right ? left : right;
     }
 
+    public static int max(int first, int second, int third) {
+        return first > max(second, third) ? first : max(second, third);
+    }
+
+    public static int max(int first, int second, int third, int fourth) {
+        return first > max(second, third, fourth) ? first : max(second, third, fourth);
+    }
+
     public static void main(String[] args) {
-        int result = Max.max(1, 1);
+        int result = Max.max(1, 1, 8, 4);
         System.out.println(result);
     }
 }
